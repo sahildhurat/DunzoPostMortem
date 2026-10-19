@@ -136,6 +136,8 @@
   .foot .lim{font-size:13.5px;color:#7E978B;margin-top:30px;border-top:1px solid var(--line-dark);padding-top:22px;max-width:80ch}
   .foot .lim b{color:var(--green-bright)}
   .foot .src{font-family:var(--mono);font-size:11.5px;color:#5E776B;margin-top:16px}
+  .foot .back{color:#A9C2B6}
+  .foot .back a{color:#fff;text-decoration:underline;text-underline-offset:2px}
 
   /* ---------- USER JOURNEY ---------- */
   .jrny{display:grid;grid-template-columns:1fr 1fr;gap:20px}
@@ -350,7 +352,7 @@
 <section class="wrap" id="timeline">
   <div class="eyebrow">Exhibit F · Six forks</div>
   <h2>Where the decisions went wrong</h2>
-  <p class="lede">Each fork, read as what the team optimized for, the signal it discounted, and the disciplined alternative. Tap a point.</p>
+  <p class="lede">Each fork, read as what the team optimised for, the signal it discounted, and the disciplined alternative. Tap a point.</p>
   <div class="tl">
     <div class="tl-track" id="tlTrack"><div class="tl-line"></div></div>
     <div class="tl-detail" id="tlDetail"></div>
@@ -363,8 +365,9 @@
     <div class="eyebrow" style="color:var(--green-bright)">The bottom line</div>
     <h2>Winnable market. The company lost.</h2>
     <p class="restate">Dunzo led a differentiated category, moved into a commoditised and capital-intensive one where it was structurally disadvantaged, funded the move with capital that removed its ability to recover — and did not survive the gap.</p>
-    <p class="lim"><b>Limitations:</b> public disclosures are annual, not cohort-level; per-order economics in the simulator are an illustrative model anchored to reported AOV, break-even and burn figures — not audited unit-level data; the weighting of positioning vs. governance vs. the 2022–23 funding winter is a reasoned judgment, not a measurement.</p>
+    <p class="lim"><b>Limitations:</b> public disclosures are annual, not cohort-level; per-order economics in the simulator are an illustrative model anchored to reported AOV, break-even and burn figures — not audited unit-level data; the weighting of positioning vs. governance vs. the 2022–23 funding winter is a reasoned judgement, not a measurement.</p>
     <p class="src">Sources: MCA filings via Entrackr / Inc42 / Dazeinfo (FY22–FY23) · Rest of World · Business Standard (Deloitte going-concern) · Outlook Business · MediaNama. Figures in INR.</p>
+    <p class="src back">Dunzo product post-mortem &mdash; full case study and deck at <a href="https://sahildhurat.notion.site/Portfolio-378deea52e9d80e09930ed26c59320b7">sahildhurat.notion.site</a></p>
   </div>
 </footer>
 
@@ -554,7 +557,7 @@
     document.getElementById("tlDetail").innerHTML =
       '<div class="when">'+f.date+'</div><h4>'+f.title+'</h4>'+
       '<div class="tl-cols">'+
-        '<div class="tl-c"><div class="lab o">Optimized for</div><p>'+f.o+'</p></div>'+
+        '<div class="tl-c"><div class="lab o">Optimised for</div><p>'+f.o+'</p></div>'+
         '<div class="tl-c"><div class="lab i">Signal it discounted</div><p>'+f.i+'</p></div>'+
         '<div class="tl-c"><div class="lab a">Disciplined alternative</div><p>'+f.a+'</p></div>'+
       '</div>';
